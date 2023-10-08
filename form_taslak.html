@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h3>Html Form</h3>
+        <form action="/action_page_binary.asp" target="_blank" method="post" autocomplete="on">
+            <!--özel verilerde ASLA get metodu kullanılmaz post kullanılır-->
+
+            <fieldset>
+                <legend>giriş bilgileri</legend>
+            <label for="fisim"  required >isim</label><br>
+            <input type="text" id="fisim" name="fisim"><br>
+            <label for="fsoyisim">soyisim</label><br>
+            <input type="text" id="fsoyisim" name="fsoyisim" autocomplete="on"><br>
+            <label for="phone">telefon no</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="0-(512)-456-78-99" pattern="[0]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[09]{2}" maxlength="11"><br>
+            <label for="şifre">şifre</label><br>
+            <input type="password" id="şifre" name="şifre"><br><br>
+
+            <input type="submit" value="submit">
+            <input type="reset" value="temizle">
+            </fieldset>
+<hr>
+            <input type="range" id="b" name="b" value="50"><br>
+<hr>
+            <button type="button" onclick="alert('merhaba')" disabled>tıkla</button>
+<hr>
+            <label for="fcheck1">sınırsız seç</label><br>
+            <input type="checkbox" id="fcheck1" name="fcheck1"><br>
+            <label for="fcheck2"></label>
+            <input type="checkbox" id="fcheck2" name="fcheck2"><br>
+            <label for="fcheck3"></label>
+            <input type="checkbox" id="fcheck3" name="fcheck3"><br>
+<hr>
+            <label for="">gönder</label>
+            <input type="submit" id="fsubmit" name="fsubmit" formnovalidate><br>
+<hr>
+            <label for="fradio1">futbol</label>
+            <input type="radio" id="fradio1" name="fradio1" value="futbol"><br>
+            <label for="fradio2">voleybol</label>
+            <input type="radio" id="fradio2" name="fradio2" value="voleybol"><br>
+<hr>
+            <label for="city">bir şehir seçiniz</label>
+            <select name="city" id="city" size="2">
+                <option value="çorum">çorum</option>
+                <option value="balıkesir">balıkesir</option>
+                <option value="ankara">ankara</option>
+            </select><br>
+<hr>
+            <textarea name="note" id="note" cols="10" rows="10" autofocus></textarea>
+<hr>
+            <input list="sigaralar">
+            <datalist id="sigaralar">
+                <option value="camel">Camel</option>
+                <option value="marlboro">Marlboro</option>
+                <option value="lark">Lark</option>
+            </datalist><br>
+        </form>
+
+    </body>
+</html>
